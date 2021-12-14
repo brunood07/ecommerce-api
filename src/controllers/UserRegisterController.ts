@@ -7,9 +7,9 @@ class UserRegisterController {
     const { username, full_name, email, password, cpf, address, phone } =
       req.body;
 
-    const userRegisterService = new UserRegisterService();
+    const service = new UserRegisterService();
 
-    const user = userRegisterService.execute({
+    const user = service.execute({
       username,
       full_name,
       email,

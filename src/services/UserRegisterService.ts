@@ -1,3 +1,5 @@
+import CryptoJS from "crypto-js";
+
 import User, { IUser } from "../models/User";
 
 class UserRegisterService {
@@ -10,11 +12,16 @@ class UserRegisterService {
     address,
     phone,
   }: IUser): Promise<IUser> {
+    const passwordHash = CryptoJS.AES.encrypt(
+      password,
+      String(process.env.PASS_SECRET)
+    );
+
     const newUser = new User({
       username,
       full_name,
       email,
-      password,
+      password: passwordHash,
       cpf,
       address,
       phone,
