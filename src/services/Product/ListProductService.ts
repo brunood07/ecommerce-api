@@ -1,4 +1,4 @@
-import Product from "../models/Products";
+import Product from "../../database/model/Products";
 
 class ListProductService {
   async execute(id: string) {

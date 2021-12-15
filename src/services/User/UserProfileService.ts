@@ -1,5 +1,5 @@
-import { UserMap } from "../mapper/UserMap";
-import User, { IUser } from "../models/User";
+import User, { IUser } from "../../database/model/User";
+import { UserMap } from "../../mapper/UserMap";
 
 class UserProfileService {
   async execute(id: string) {

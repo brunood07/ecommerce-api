@@ -1,5 +1,5 @@
-import { AppError } from "../errors/AppError";
-import Product from "../models/Products";
+import Product from "../../database/model/Products";
+import { AppError } from "../../errors/AppError";
 
 class DeleteProductService {
   async execute(id: string) {

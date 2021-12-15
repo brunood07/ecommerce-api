@@ -1,5 +1,5 @@
-import { AppError } from "../errors/AppError";
-import User from "../models/User";
+import User from "../../database/model/User";
+import { AppError } from "../../errors/AppError";
 
 class UserDeleteService {
   async execute(id: string) {

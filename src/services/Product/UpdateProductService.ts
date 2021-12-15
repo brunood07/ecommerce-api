@@ -1,4 +1,4 @@
-import Product from "../models/Products";
+import Product from "../../database/model/Products";
 
 interface IRequest {
   id: string;

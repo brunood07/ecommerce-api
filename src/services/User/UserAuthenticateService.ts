@@ -1,8 +1,8 @@
 import CryptoJS from "crypto-js";
 import { sign } from "jsonwebtoken";
 
-import { AppError } from "../errors/AppError";
-import User from "../models/User";
+import User from "../../database/model/User";
+import { AppError } from "../../errors/AppError";
 
 interface IRequest {
   username: string;

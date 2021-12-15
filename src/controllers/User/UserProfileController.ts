@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 
-import { UserProfileService } from "../services/UserProfileService";
+import { UserProfileService } from "../../services/User/UserProfileService";
 
 class UserProfileController {
   async handle(req: Request, res: Response): Promise<Response> {

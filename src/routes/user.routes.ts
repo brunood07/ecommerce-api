@@ -1,10 +1,10 @@
 import { Router } from "express";
 
-import { UserDeleteController } from "../controllers/UserDeleteController";
-import { UserLoginController } from "../controllers/UserLoginController";
-import { UserProfileController } from "../controllers/UserProfileController";
-import { UserRegisterController } from "../controllers/UserRegisterController";
-import { UserUpdateController } from "../controllers/UserUpdateController";
+import { UserDeleteController } from "../controllers/User/UserDeleteController";
+import { UserLoginController } from "../controllers/User/UserLoginController";
+import { UserProfileController } from "../controllers/User/UserProfileController";
+import { UserRegisterController } from "../controllers/User/UserRegisterController";
+import { UserUpdateController } from "../controllers/User/UserUpdateController";
 import { ensureAuthenticated } from "../middlewares/ensureAuthenticated";
 
 const userRoutes = Router();

@@ -1,4 +1,4 @@
-import "./models";
+import "./database";
 import "dotenv/config";
 import express, { Request, Response, NextFunction } from "express";
 import "express-async-errors";

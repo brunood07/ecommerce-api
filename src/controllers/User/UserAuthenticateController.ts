@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 
-import { UserAuthenticateService } from "../services/UserAuthenticateService";
+import { UserAuthenticateService } from "../../services/User/UserAuthenticateService";
 
 class UserAuthenticateController {
   async handle(req: Request, res: Response): Promise<Response> {

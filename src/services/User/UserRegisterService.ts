@@ -1,6 +1,6 @@
 import CryptoJS from "crypto-js";
 
-import User, { IUser } from "../models/User";
+import User, { IUser } from "../../database/model/User";
 
 class UserRegisterService {
   async execute({

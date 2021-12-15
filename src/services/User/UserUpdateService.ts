@@ -1,4 +1,4 @@
-import User from "../models/User";
+import User from "../../database/model/User";
 
 interface IRequest {
   id: string;

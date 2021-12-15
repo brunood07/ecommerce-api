@@ -1,10 +1,10 @@
 import { Router } from "express";
 
-import { DeleteProductController } from "../controllers/DeleteProductController";
-import { ListAllProductsController } from "../controllers/ListAllProductsController";
-import { ListProductController } from "../controllers/ListProductController";
-import { NewProductController } from "../controllers/NewProductController";
-import { UpdateProductController } from "../controllers/UpdateProductController";
+import { DeleteProductController } from "../controllers/Product/DeleteProductController";
+import { ListAllProductsController } from "../controllers/Product/ListAllProductsController";
+import { ListProductController } from "../controllers/Product/ListProductController";
+import { NewProductController } from "../controllers/Product/NewProductController";
+import { UpdateProductController } from "../controllers/Product/UpdateProductController";
 import { ensureAuthenticated } from "../middlewares/ensureAuthenticated";
 
 const prodRoutes = Router();

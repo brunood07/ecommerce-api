@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 
-import { ListAllProductsService } from "../services/ListAllProductsService";
+import { ListAllProductsService } from "../../services/Product/ListAllProductsService";
 
 class ListAllProductsController {
   async handle(req: Request, res: Response): Promise<Response> {

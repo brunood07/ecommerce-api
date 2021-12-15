@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 
-import { UserDeleteService } from "../services/UserDeleteService";
+import { UserDeleteService } from "../../services/User/UserDeleteService";
 
 class UserDeleteController {
   async handle(req: Request, res: Response): Promise<Response> {

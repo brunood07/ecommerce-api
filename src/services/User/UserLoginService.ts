@@ -1,7 +1,7 @@
 import CryptoJS from "crypto-js";
 
-import { AppError } from "../errors/AppError";
-import User, { IUser } from "../models/User";
+import User, { IUser } from "../../database/model/User";
+import { AppError } from "../../errors/AppError";
 
 interface IRequest {
   username: string;
