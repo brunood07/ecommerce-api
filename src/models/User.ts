@@ -8,6 +8,7 @@ export interface IUser {
   cpf: number;
   phone: number;
   address: string;
+  isAdmin?: boolean;
 }
 
 const UserSchema: Schema = new Schema(

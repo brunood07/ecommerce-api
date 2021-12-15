@@ -8,7 +8,7 @@ class UserLoginController {
 
     const service = new UserLoginService();
 
-    const login = await service.execute({ username, password });
+    await service.execute({ username, password });
 
     return res.status(200).send("Logged in!");
   }
