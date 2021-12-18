@@ -16,7 +16,7 @@ const listProductController = new ListProductController();
 const listAllProductsController = new ListAllProductsController();
 
 prodRoutes.post("/register", ensureAuthenticated, newProductController.handle);
-prodRoutes.post(
+prodRoutes.put(
   "/update/:id",
   ensureAuthenticated,
   updateProductController.handle
