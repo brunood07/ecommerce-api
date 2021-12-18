@@ -1,4 +1,4 @@
-import Cart from "../../database/model/Cart";
+import Cart, { ICart } from "../../database/model/Cart";
 
 interface IRequest {
   userId: string;
@@ -9,7 +9,7 @@ interface IRequest {
 }
 
 class NewCartService {
-  async execute({ userId, products }: IRequest) {
+  async execute({ userId, products }: IRequest): Promise<ICart> {
     const newCart = new Cart({ userId, products });
 
     const createdCart = await newCart.save();

@@ -19,7 +19,7 @@ class UserRegisterController {
       phone,
     });
 
-    return res.status(201).send(user);
+    return res.status(201).json(user);
   }
 }
 

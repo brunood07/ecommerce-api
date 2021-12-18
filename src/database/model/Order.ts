@@ -1,14 +1,14 @@
 import mongoose, { Schema } from "mongoose";
 
-interface IOrder {
+export interface IOrder {
   userId: string;
   products: {
     productId: string;
     quantity: number;
-    amount: number;
-    address: string;
-    status: string;
   };
+  amount: number;
+  address: string;
+  status: string;
 }
 
 const OrderSchema: Schema = new Schema(
